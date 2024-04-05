@@ -1,0 +1,7 @@
+#5 Faça um Programa que converta metros para centímetros.
+
+num1 = float(input('Digite um numero: '))
+
+centi = num1 * 100
+
+print(centi)
