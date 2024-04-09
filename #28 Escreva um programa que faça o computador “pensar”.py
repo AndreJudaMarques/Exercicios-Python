@@ -10,10 +10,10 @@ print()
 print('-=-' * 10)
 print('Vou pensar em um número entre 0 e 5. Tente adivinhar...')
 n = randrange(6) #até o 5
-time.sleep(0.5)
+sleep(0.5)
 numero = int(input('Em que número estou pensando? '))
 print('Processando')
-time.sleep(2)
+sleep(2)
 if numero == n:
       print(f'PARABÉNS!!! Você acertou meu número!')
 else:
