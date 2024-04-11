@@ -68,3 +68,9 @@ else:
       print('Opção inválida')
 
 print()
+print('Aperte ENTER para encerrar')
+print('feito por André Judá @andrejuda')
+
+input()
+
+print()
