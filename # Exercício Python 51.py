@@ -24,7 +24,7 @@ razao = int(input('Razão: '))
 #RESOLVER COM FOR
 
 decimo = termo + ( 10 - 1) * razao
-for i in range(termo, decimo + razao, razao):        # ESTE COM AJUDA DA AULA
+for i in range(termo, decimo + razao, razao):    # ESTE COM AJUDA DA AULA
       print(f'{termo}', end=' -> ')
       termo = termo + razao
 print('ACABOU')
