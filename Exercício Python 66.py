@@ -5,9 +5,7 @@
 
 print()
 
-n = 0
-soma = 0
-cont = 0
+n = soma = cont = 0
 
 while cont > -1:
       n = int(input('Digite um valor: [999 para parar] : '))
