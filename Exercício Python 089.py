@@ -44,7 +44,3 @@ print()
 print('FINALIANDO...')
 print('<<< VOLTE SEMPRE >>>')
 print()
-
-# exemplo = [['maria', 7.5], ['claudio', 2.8]]
-
-# print(exemplo[0][1]) = 7.5
