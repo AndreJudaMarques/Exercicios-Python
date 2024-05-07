@@ -33,6 +33,8 @@ for indice, listax in enumerate(jogos):
       print(f'Jogo {indice + 1}: {listax}')
       sleep(0.5)
       
+print(lista)
+print(jogos)
 
 print()
 
