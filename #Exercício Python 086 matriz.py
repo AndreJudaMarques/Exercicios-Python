@@ -1,6 +1,5 @@
 #Exercício Python 086 matriz
 
-
 print()
 
 matriz = [[],[],[],  # linha 0
@@ -18,7 +17,6 @@ for i in range(0,9):
 print(f'{matriz[:3]}')
 print(f'\n{matriz[3:6]}')
 print(f'\n{matriz[6:]}')
-
 
 print()
 
