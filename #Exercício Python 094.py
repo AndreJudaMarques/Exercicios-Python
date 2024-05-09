@@ -24,7 +24,7 @@ while True:
             print('ERRO! Responda apenas S ou N.')      
       if resp == 'N':
             break
-print('-=-' * 15)
+print('-=-' * 15) # até aqui é a leitura dos dados, abaixo sao os resultados
 print(f'A) Ao todo temos {len(galera)} pessoas cadastradas')
 media = soma / len(galera)
 print(f'B) A média de idade é de {media:5.2f} anos')
