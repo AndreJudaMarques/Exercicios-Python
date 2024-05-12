@@ -20,6 +20,15 @@ def contm1():
       print('FIM!')
 
 def contador():
+      """
+      ->faz uma contagem e mostra na tela
+      com os respectivos inputs
+
+      ini: inicio da contagem
+      fim: fim da contagem
+      passo: passos da contaggem
+      return: sem retorno
+      """
       if ini <= fim:
             cont = ini
             while cont < fim:
@@ -55,3 +64,5 @@ print(f'Contagem de {ini} até {fim} de {passo} em {passo}:')
 contador()
 
 print()
+
+help(contador)
