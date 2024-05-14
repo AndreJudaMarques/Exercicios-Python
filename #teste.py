@@ -1,10 +1,7 @@
 #teste
 
+import uteis
 
-def fatorial(n):
-      f = 1
-      for c in range(n, 0, -1):
-            f = f* c
-      return f
+print(f'fatorial é {uteis.fatorial(18)}')
 
-print(fatorial(5))
+print(f'Dobro é ', uteis.dobro(2))
