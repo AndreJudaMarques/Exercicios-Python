@@ -2,7 +2,7 @@
 
 print()
 
-import moedas
+import utilizadescev.moedas as moedas
 
 preco = float(input('Digite o preço: R$'))
 print(f'A metade de R${preco:.2f} é de R${moedas.metade(preco)} ')
