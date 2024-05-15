@@ -3,8 +3,9 @@ import os
 
 def criarArquivo(nome):
       try:
-           a = open(nome, 'wt+')
-           a.close()
+           caminho = os.path.join('ex115dir', 'lib', 'arquivo', nome)
+           with open(caminho, 'wt+'):
+            pass
       except:
            print('houve erro')
       else:
@@ -13,13 +14,13 @@ def criarArquivo(nome):
     
 
 def lerArquivo(nome):
-      try:
-          a = open(nome, 'rt')
-      except:
-           print('Houve erro')
-      else:
-           cabecalho('PESSOAS CADSTRADAS')
-           print(a.readline())
+    try:
+        caminho = os.path.join('ex115dir', 'lib', 'arquivo', nome)
+        with open(caminho, 'rt') as arquivo:
+            cabecalho('PESSOAS CADASTRADAS')
+            print(arquivo.read())
+    except Exception as e:
+        print(f'Houve um erro ao ler o arquivo: {e}')
 
 
 '''def arquivoExiste(nome):

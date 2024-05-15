@@ -6,7 +6,7 @@ from time import sleep
 
 arq = 'cursoemvideo.txt'
 
-criarArquivo(arq)
+#criarArquivo(arq)
 
 print()
 
@@ -16,7 +16,6 @@ while True:
             #opcao de listar o conteudo de um arquivo
             cabecalho('Opção 1')
             lerArquivo(arq)
-            print('leu')
       elif resposta == 2:
             cabecalho('Opção 2') 
       elif resposta == 3:
