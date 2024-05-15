@@ -1,5 +1,6 @@
 from lib.interface import *
 import os
+from time import sleep
 
 def criarArquivo(nome):
       try:
@@ -18,9 +19,26 @@ def lerArquivo(nome):
         caminho = os.path.join('ex115dir', 'lib', 'arquivo', nome)
         with open(caminho, 'rt') as arquivo:
             cabecalho('PESSOAS CADASTRADAS')
-            print(arquivo.read())
+            for linha in arquivo:
+                dado = linha.split(';')
+                dado[1] = dado[1].replace('\n', '')
+                print(f'{dado[0]:<30} {dado[1]:>3} anos')
     except Exception as e:
         print(f'Houve um erro ao ler o arquivo: {e}')
+      
+    '''finally:
+        a.close()'''
+
+
+def cadastrar(arq, nome='desconhecido', idade=0):
+    try:
+        caminho = os.path.join('ex115dir', 'lib', 'arquivo', arq)
+        with open(caminho, 'at') as arquivo:
+            arquivo.write(f'{nome};{idade}\n')
+        print(f'Novo registro de {nome} adicionado')
+        sleep(1)
+    except Exception as e:
+        print(f'Houve um erro ao cadastrar o registro: {e}')
 
 
 '''def arquivoExiste(nome):
